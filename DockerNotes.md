@@ -4,6 +4,11 @@
 
 ### -Useful Commands
 
+**Connect to docker host from windows bash**
+>docker -H tcp://0.0.0.0:2375
+--Need to set DOCKER_HOST to that url in bashrc
+
+
 **Show all continers**
 >Docker ps -a
 
@@ -31,6 +36,20 @@ One liner to stop / remove all of Docker containers:
   
  **Build image**
 >docker build -t your_image_name .
+
+**Install Docker Machine**
+https://docs.docker.com/machine/install-machine/#how-to-uninstall-docker-machine
+
+**Install Docker Machine for Windows Bash**
+>base=https://github.com/docker/machine/releases/download/v0.14.0 &&
+>  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
+>  sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+
+**Install Docker Machine in Git Bash**
+>base=https://github.com/docker/machine/releases/download/v0.14.0 &&
+>  mkdir -p "$HOME/bin" &&
+>  curl -L $base/docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe" &&
+>  chmod +x "$HOME/bin/docker-machine.exe"
   
 
   
