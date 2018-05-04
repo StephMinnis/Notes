@@ -1,7 +1,8 @@
 ## Docker Notes
 ---
 
-#### Useful Commands
+
+### Useful Commands
 
 **Show all continers**
 >Docker ps -a
@@ -12,7 +13,8 @@
 **Run container **
 >Docker run -it -d 80:80 image_name
 
-#### Maintenance
+
+### Maintenance
 One liner to stop / remove all of Docker containers:
   >docker stop $(docker ps -a -q)
   >docker rm $(docker ps -a -q)
