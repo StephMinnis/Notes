@@ -51,5 +51,10 @@ https://docs.docker.com/machine/install-machine/#how-to-uninstall-docker-machine
 >  curl -L $base/docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe" &&
 >  chmod +x "$HOME/bin/docker-machine.exe"
   
+**Resources**
+This site had a good tutorial on creating a LEMP stack
+https://www.howtoforge.com/tutorial/dockerizing-lemp-stack-with-docker-compose-on-ubuntu/
+
+-Needed to make sure C was shared to get containers working
 
   
