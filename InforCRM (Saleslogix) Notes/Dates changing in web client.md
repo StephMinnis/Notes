@@ -6,7 +6,7 @@
 
 #### To get around this quickly (and because we aren't using time on these fields) the following query adds 10 hours to the date.  This is enough to cover users in the US.
 
-''' SQL
+``` SQL
 
 --Get a count of the records to be modified (Optional)
 SELECT COUNT(*)
@@ -34,4 +34,4 @@ where udf.commitdate is not null
 and cast(udf.commitdate as time) = '00:00:00'
 and cast(udf.commitdate as date) <> cast(ut.commitdate as date)
 
-'''
+```
