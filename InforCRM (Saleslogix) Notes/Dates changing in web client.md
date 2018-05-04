@@ -1,11 +1,12 @@
-## About:  Infor CRM converts dates to their UTC (Timezone) equivalent when displaying them in the web form.  Dates imported from other systems with a time of 00:00:00 can be problematic.  Eastern time is -5 and when a 00:00:00 time is displayed in the ICRM web client it renders as the prior days date.
+## Infor CRM UTC Time changing dates in web client
+
+#### About:  Infor CRM converts dates to their UTC (Timezone) equivalent when displaying them in the web form.  Dates imported from other systems with a time of 00:00:00 can be problematic.  Eastern time is -5 and when a 00:00:00 time is displayed in the ICRM web client it renders as the prior days date.
+
 ##### Symptom:  Infor CRM (Saleslogix) is changing dates to yesterday in the web form but when I check the database they look fine
-
-
 
 #### To get around this quickly (and because we aren't using time on these fields) the following query adds 10 hours to the date.  This is enough to cover users in the US.
 
-'''SQL
+''' SQL
 
 --Get a count of the records to be modified (Optional)
 SELECT COUNT(*)
