@@ -1,8 +1,8 @@
 ## Docker Notes
----
 
 
-### Useful Commands
+
+### -Useful Commands
 
 **Show all continers**
 >Docker ps -a
@@ -13,8 +13,15 @@
 **Run container **
 >Docker run -it -d 80:80 image_name
 
+### -NGINX
 
-### Maintenance
+**Create default container on port 80**
+>docker run --name mynginx1 -p 80:80 -d nginx
+
+**Test the webserver
+curl http://localhost
+
+### -Maintenance
 One liner to stop / remove all of Docker containers:
   >docker stop $(docker ps -a -q)
   >docker rm $(docker ps -a -q)
