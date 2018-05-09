@@ -17,10 +17,12 @@ About:  This document walks you through how to set up a server side data validat
 
 .*This example uses Regex to verify that there are only numbers and that the data entered is only a 4 digit entry
 
-```
-Regex r = new Regex("^[0-9]{1,4}$");       
+``` 
+Regex r = new Regex("^[0-9]{1,4}$");		
+if (!String.IsNullOrEmpty(QFTextBox.Text)){
 if (!r.IsMatch(QFTextBox.Text))
-    throw new Sage.Platform.Application.ValidationException("Month to Ship must be a four digit number (like 1801 for 2018-JAN) ");
+			   throw new Sage.Platform.Application.ValidationException("Month to Ship must be a four digit number (like 1801 for 2018-JAN) ");
+}
 ```
 
 *Save, build and deploy
