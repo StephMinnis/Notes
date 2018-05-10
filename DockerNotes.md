@@ -15,8 +15,11 @@
 **Connect to shell on running container**
 >Docker exec -it e2a560cc4947 bash
 
-**Run container **
+**Run container**
 >Docker run -it -d 80:80 image_name
+
+**Check Container resources**
+>Docker Stats
 
 ### -NGINX
 
