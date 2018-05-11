@@ -8,6 +8,10 @@
 >docker -H tcp://0.0.0.0:2375
 --Need to set DOCKER_HOST to that url in bashrc
 
+**Getting windows bash to work with docker-machine**
+turn on the Expose daemon on tcp;/localhost:2375 option in docker settings
+in windows bash: export DOCKER_HOST=tcp://127.0.0.1:2375
+
 
 **Show all continers**
 >Docker ps -a
