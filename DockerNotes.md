@@ -65,5 +65,5 @@ This site had a good tutorial on creating a LEMP stack
 https://www.howtoforge.com/tutorial/dockerizing-lemp-stack-with-docker-compose-on-ubuntu/
 
 -Needed to make sure C was shared to get containers working
-
+# docker run --name mynginx2 --mount source=/var/www,target==/usr/share/nginx/html,readonly --mount source=/var/nginx/conf,target=/etc/nginx/conf,readonly -p 80:80 -d nginx
   
