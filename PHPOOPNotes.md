@@ -141,7 +141,7 @@ function test()
 
 [From] (https://www.php.net/manual/en/language.variables.scope.php#language.variables.scope.static)
 
-##Static methods: 
+## Static methods: 
 Can be accessed without instantiating the class
 	-Since they aren't instantiated there is no $this
 
