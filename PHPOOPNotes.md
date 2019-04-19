@@ -3,12 +3,13 @@ Properties - Class variables, attributes, fields
 Public, Protected, Private
 Inside methods:  $this->property
 Outside methods: 
-	- Public:
-	   - $objectname->property = "some value";
-		- $objectname->property;
-	- Private use getter/setter:
-		- $object->setProperty("some value");
-		- $object->getProperty;
+
+	1. Public:
+		* $objectname->property = "some value";
+		* $objectname->property;
+	2. Private use getter/setter:
+		* $object->setProperty("some value");
+		* $object->getProperty;
 
 ## Class 
 Recipe for an object
@@ -94,7 +95,7 @@ class employee extends person
 Employee is a type of person
 
 ## Overriding methods
-Allows the child class or type to set its own methodsdone by declaring the same method in the child class
+Allows the child class or type to set its own methods done by declaring the same method in the child class
 
 ```php
 <?php
