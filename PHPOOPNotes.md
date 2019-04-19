@@ -3,12 +3,12 @@ Properties - Class variables, attributes, fields
 Public, Protected, Private
 Inside methods:  $this->property
 Outside methods: 
-	* Public:  
-		* $objectname->property = "some value";
-		* $objectname->property;
-	* Private use getter/setter:
-		* $object->setProperty("some value");
-		* $object->getProperty;
+	- Public:
+	   - $objectname->property = "some value";
+		- $objectname->property;
+	- Private use getter/setter:
+		- $object->setProperty("some value");
+		- $object->getProperty;
 
 ## Class 
 Recipe for an object
